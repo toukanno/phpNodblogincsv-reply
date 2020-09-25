@@ -1,0 +1,96 @@
+bootstrap
+https://codezine.jp/article/detail/8145
+https://getbootstrap.jp/docs/4.3/getting-started/introduction/
+https://centosinstall.com/design/bootstrap/stylesheet
+https://homupedia.com/bootstrap4-cheat-sheet.html
+http://www.tohoho-web.com/bootstrap/buttons.html
+Alerts(アラート)は,ユーザーのアクションに対してのアラートメッセージを提供しています。アラートの使い方のドキュメントです。
+<div class="alert alert-danger" role="alert">
+https://getbootstrap.jp/docs/4.3/components/alerts/
+
+PHP
+https://www.php.net/manual/ja/language.operators.string.php
+https://techacademy.jp/magazine/35967
+require_onceでは、既にファイルが読み込まれている場合、読み込まない、
+といういう意味が少しわかって頂けるかと思います。
+エラー表示について
+https://web-dev.xyz/php-iniset-displayerrors/
+https://qiita.com/shotets/items/3c95aef631b2c5eadae5
+error_reporting
+error_reporting — 出力する PHP エラーの種類を設定する
+PHP初心者はまず関数die()と、print_r()を覚えよう！
+メッセージを出力し、現在のスクリプトを終了する　die()　die — exit と同等
+<?php } ?> 空白を必要とする
+https://teratail.com/questions/8599
+「この関数の結果はこれを返して、呼び出し元に処理を戻す」ということです。
+
+preg_match — 正規表現によるマッチングを行う
+https://eng-entrance.com/php-regularex
+^行頭にマッチする
+if (preg_match("/^-/", $line))
+
+https://qiita.com/kazu56/items/bc77582313918fe2a3b1
+PHP_EOL　改行
+https://tadtadya.com/php-new-line-php-eol/　
+\nではなくPHP_EOLを使いましょう
+
+html
+<meta>タグは、その文書に関する情報（メタデータ）を指定する際に使用します。 メタデータとは、“情報に関する情報”のことですが、HTMLの仕様では“その文書に関する様々な情報”を意味します。
+http://www.htmq.com/html5/meta.shtml
+content属性でその内容を指定
+http-equiv属性を指定すると、meta要素がプラグマ指示子となる
+refresh …… リダイレクト・再読み込みの指定
+プラグマ指示子はプラグマ （ユーザエージェントへの指示） を指定するための名前のことです。
+https://reference.hyper-text.org/html5/attribute/http-equiv/
+http-equiv="refresh" を指定することで、ページを一定間隔で再読み込みしたり、異なるページにリダイレクトしたりすることができます
+https://www.sakurasaku-labo.jp/blogs/html-meta-redirect
+htmlのmeta refreshを使ったリダイレクト設定
+https://wemo.tech/1795
+content属性に「秒数」と「転送先のURL」を指定します。
+この例では、転送先のURLは相対パスで指定していますが、https~からのURLを直接指定してもOK。
+https://techacademy.jp/magazine/29322
+HTML
+HTMLでrole属性を使ってアクセシビリティを高める方法をを現役デザイナーが解説【初心者向け】
+
+alert ロールの使用
+role属性はWAI-ARIAで定義されており、利用することでサイトのアクセシビリティを高めることができます。
+http://www.webcreativepark.net/html/wai-aria/role/
+https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role
+meta
+http://www.tohoho-web.com/html/meta.htm
+メタデータとは、データについてのデータ。
+
+
+CSS
+https://beginners-hp.com/css-property/width.html
+em
+親要素のfont-sizeを基準に大きさを計算する
+http://www.htmq.com/style/max-width.shtml
+領域の幅の最大値を指定
+https://developer.mozilla.org/ja/docs/Web/CSS/max-width
+左右中央寄せ
+https://qiita.com/tekondo/items/abc1ddddb09879470496
+margin 0 auto;が効かない原因
+基本的にブロック要素は指定がないと親要素の100%の大きさになります。
+親要素と同じ大きさであれば
+たとえmargin 0 autoを指定していたとしても左右中央寄せになりません。
+なので指定する際はwidthプロパティで横幅を指定するようにしましょう。
+
+javascript
+setTimeout…一定時間後に特定の処理をおこなう（繰り返さずに一度だけ）
+https://techacademy.jp/magazine/5541
+https://www.sejuku.net/blog/24540
+setTimeoutは、第二引数に与えられた実行タイミング(ミリ秒)で、第一引数に定義された処理内容を1度実行します。
+setTimeout(処理内容,実行タイミング)
+タイミングの単位がミリ秒なことに注意です。
+つまり2秒の場合は2000、6秒の場合は6000と入力するわけですね。
+window.history.back()メソッド
+window.history.back()は、ブラウザの履歴リストの中の前のURLを表示するメソッド。
+ブラウザの「戻る」ボタンと同じ。
+<div id="sample">
+    <button class="sampleButton" onclick="window.history.back();">戻る</button>
+    <button class="sampleButton" onclick="window.history.forward();">進む</button>
+</div>
+
+https://proengineer.internous.co.jp/content/columnfeature/8007
+JavaScriptのconfirmメソッドで確認ダイアログを作成しよう！
