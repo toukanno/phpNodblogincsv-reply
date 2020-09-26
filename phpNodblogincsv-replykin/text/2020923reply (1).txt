@@ -1,0 +1,44 @@
+返信はtwitterのように無限にできる なのでfor分でループしていかなければならない
+for文でもwhile文でも。返信記事がいくつあるのかを取得するのが大変
+なのでテーブルタグに追加していくか
+多くなるのでクリックしたら開けるか
+どちらでもよいが今回は前者でよい
+なのでtdを返信内容分増やしていかないといけない
+https://befool.co.jp/blog/ando/reply-function/　
+こんなかんじのUIでもよい
+top.phpのUIをどのようにしたらいいのかが分からない←いまここ
+とりあえず返信内容にはuseridが分かるようにしていかなければならない
+forやwhileで返信文追加していくのが難してわからない　←いまここ
+返信内容は投稿されている内容のすぐ下に表示したい
+http://komonet.qcweb.jp/php/program/bbs/chap4.htm
+//返信記事の表示
+親記事に対応した返信記事をセレクトして表示しています。こちらは、大元の記事記録用ファイルからデータを読み込んでいる点に注意して下さい。
+　for($j=0; $j<sizeof($message); $j++){
+　　list($code3,$ress3,$name3,$email3,$subject3,$comment3,$pass3,$now3) = split(",", $message[$j]);
+　　if ($code2 == $ress3) {
+　　　print "RE:[" . $code3 . "]<font color='blue'><b>$subject3</b></font>\n";
+　　　if ($email3 != "") {
+　　　　print " <a href=mailto:$email3><strong>$name3</strong></a>\n";
+　　　} else { print " <strong>$name3</strong>\n";
+　　　}
+　　　print " <font size=2 color='green'>$now3</font>\n";
+　　　print "<blockquote>$comment3</blockquote>\n";
+　　}
+　}
+　print "</blockquote></form><hr>\n";
+}
+
+//postの値がからだったら送信できないようにもしたい
+//画像も投稿できるようにしたい　返信機能も画像投稿ができる
+
+https://www.php.net/manual/ja/function.array-reverse.php
+array_reverse
+php　簡易掲示板
+https://qiita.com/sukeity/items/2f06a3bc6ea1b3e0ca6d
+
+画像のアップロード
+https://qiita.com/icelandnono/items/b6b3c06124d273f28673
+
+https://qiita.com/kentaro5364/items/e00500ce4b0094815043
+
+順番をいれかえたほうがよかったかもしれない line_number 返信もとのuserの値がすぐわかるようにしたい

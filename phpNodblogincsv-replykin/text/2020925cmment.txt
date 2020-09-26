@@ -1,0 +1,51 @@
+
+//ログインしたメンバーのみがアクセスできる初期画面
+//ここでtext.csvユーザ情報を編集させる
+// // // ログイン済みかを確認
+// $flg = 7;
+// $user2 = getUserText($flg);
+// print_r($user2);
+// print_r($user2["textid"]);
+// print_r($user2["textflg"]);
+// print_r($user2["id"]);
+// print_r($user2["name"]);
+// print_r($user2["date"]);
+// print_r($user2["deleteflg"] );
+	//読み取り専用でファイルを開く
+			// $handle = fopen("csv/text.csv", "r");
+			//  テーブルのHTMLを生成
+      		//  csvのデータを配列に変換し、HTMLに埋め込んでいる
+			//fgetで値を一行ずつ取得する
+
+			// 主キー UPDATE / DELETE用
+			// $textid = 0;
+
+			// 自分自身のCSVの内容を表示
+			// $textids = array();
+			// while ($line = fgets($handle)) 
+      
+				// $linesっていう配列にexplodeでカンマ区切りを指定して　$lineを区切って代入する
+				// $lines = explode(",", $line);
+			
+				// if (1 == trim($lines[5])) {
+				// 	continue;
+				// }
+	// fclose($handle);
+			// print_r($textids); //削除フラグ以外のtextidを取り出せる
+			// print_r($textflgs); //削除フラグ以外のtextflgを取り出せる
+			// // print_r($value);
+			// foreach ($textids as $val) {
+			// 	if (in_array($val, $textflgs)) {
+			// 		echo $val . "←このtextidへの返信内容があります(削除フラグがついていない内容への)。";
+			// 	}
+			// }
+			// print_r($textid);
+			// print_r($textflg);
+				// print_r($textids);
+								// if (getUserText($flg)) {
+				// 	$textid = getUserText($flg)['textid'];
+				// 	$textflg = getUserText($flg)['textflg'];
+				// 	$comment = getUserText($flg)['comment'];
+				// $textflg = getUserText($flg)['textflg'];
+				// $textflg = getUserText($flg)['textflg'];
+				// }
